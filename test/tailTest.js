@@ -13,9 +13,12 @@ assertEqual(words.length, 3);
 
 const assert = require('chai').assert;
 const tail = require('../tail');
+const expect = require('chai').expect;
 
 describe('#tail', () => {
-  it('returns Labs for ["Hello", "Lighthouse", "Labs"]'), () => {
-    assert.deepEqual(tail(["Hello", "Lighthouse", "Labs"]), 'Labs');
-  };
+  it('returns Labs for ["Hello", "Lighthouse", "Labs"]', () => {
+    //assert.deepEqual(tail(["Hello", "Lighthouse", "Labs"]), 'Labs');
+    const results = tail(["Hello", "Lighthouse", "Labs"]);
+    expect(results).to.eql(["Lighthouse", "Labs"]);
+  });
 });

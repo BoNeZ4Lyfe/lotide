@@ -8,14 +8,13 @@
   },
   "scripts": {
     "test": "mocha"
-    
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BoNeZ4Lyfe/lighthouse1.git"
   },
   "author": {
-    "name": "Mahad N" 
+    "name": "Mahad N"
   },
   "license": "ISC",
   "bugs": {
